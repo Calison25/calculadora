@@ -12,6 +12,7 @@
 *.out
 
 .idea
+.php_cs.cache
 
 # Dependency directories (remove the comment below to include it)
 # vendor/

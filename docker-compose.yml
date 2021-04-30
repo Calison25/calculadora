@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+  calculadora:
+    container_name: calculadora
+    ports:
+    - 1500:1500
+    build: .
+    volumes:
+      - .:/go/src
+    networks:
+      - calculadora
+
+networks:
+  calculadora:
+    name: calculadora
+    driver: bridge
